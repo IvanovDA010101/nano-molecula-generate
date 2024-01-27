@@ -1,0 +1,34 @@
+{
+  "_class_name": "StableDiffusionPipeline",
+  "_diffusers_version": "0.21.0.dev0",
+  "_name_or_path": "OFA-Sys/small-stable-diffusion-v0",
+  "feature_extractor": [
+    "transformers",
+    "CLIPImageProcessor"
+  ],
+  "requires_safety_checker": true,
+  "safety_checker": [
+    "stable_diffusion",
+    "StableDiffusionSafetyChecker"
+  ],
+  "scheduler": [
+    "diffusers",
+    "DPMSolverMultistepScheduler"
+  ],
+  "text_encoder": [
+    "transformers",
+    "CLIPTextModel"
+  ],
+  "tokenizer": [
+    "transformers",
+    "CLIPTokenizer"
+  ],
+  "unet": [
+    "diffusers",
+    "UNet2DConditionModel"
+  ],
+  "vae": [
+    "diffusers",
+    "AutoencoderKL"
+  ]
+}
